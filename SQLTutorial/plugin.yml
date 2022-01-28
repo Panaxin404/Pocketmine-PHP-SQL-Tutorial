@@ -1,0 +1,28 @@
+name: PanaxinSQLTutorial
+main: Panaxin\Main
+author: Panaxin
+version: 1.0.0
+api: 4.0.0
+
+commands:
+  getlevel:
+    description: "Returns your current level"
+    permission: getlevel.cmd
+    aliases: ["getlvl", "gl"]
+  setlevel:
+    description: "Sets your current level"
+    permission: setlevel.cmd
+    aliases: ["setlvl", "sl"]
+  levelup:
+    description: "LevelUp!!!"
+    permission: addlevel.cmd
+    aliases: ["lvlup", "lu", "up"]
+
+
+permissions:
+  getlevel.cmd:
+    default: true
+  setlevel.cmd:
+    default: true
+  addlevel.cmd:
+    default: true
